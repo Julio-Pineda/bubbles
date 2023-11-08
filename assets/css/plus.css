@@ -1,0 +1,202 @@
+.zI {
+  z-index: 4;
+}
+
+.centeredRow {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.imgDuck {
+    filter: invert(84%) sepia(99%) saturate(2489%) hue-rotate(11deg) brightness(113%) contrast(108%);
+}
+
+.imgDolphin{
+    filter: invert(45%) sepia(99%) saturate(422%) hue-rotate(173deg) brightness(94%) contrast(101%);
+}
+
+.imgTeddy {
+    filter: invert(22%) sepia(89%) saturate(2099%) hue-rotate(275deg) brightness(88%) contrast(97%);
+}
+
+.grande {
+  zoom: 1.3;
+}
+
+.colorWhiteSvg {
+  filter: invert(97%) sepia(4%) saturate(862%) hue-rotate(173deg) brightness(94%) contrast(88%);
+}
+
+.colorWhite {
+  filter: invert(100%) sepia(1%) saturate(7428%) hue-rotate(160deg) brightness(90%) contrast(94%);
+}
+
+.white {
+  color: white;
+  text-decoration: none;
+}
+
+.white:hover{
+  color: #88c90d;
+  text-decoration: dashed;
+}
+
+.black {
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+}
+
+.black:hover{
+  color: #230dc9;
+  text-decoration: dashed;
+}
+
+.roundedBorder{
+  border-radius: 48%;
+  background-color: #e7f6ff;
+}
+
+/* SHARING BUTTON */
+
+.sharing {
+    position: fixed;
+    bottom: 200px;
+    right: 60px;
+    z-index: 999;
+    animation: latir 2s infinite;
+}
+
+.buttons {
+    position: relative;
+    display: grid;
+    place-items: center;
+    height: fit-content;
+    width: fit-content;
+    transition: 0.3s;
+    border-radius: 50%;
+  }
+   
+  .buttons:hover .button {
+    box-shadow: 5px 5px 12px #cacaca, -5px -5px 12px #ffffff;
+  }
+  
+  .main-button {
+    position: relative;
+    display: grid;
+    place-items: center;
+    padding: 10px;
+    border: none;
+    /* background: #e8e8e8; */
+    background: #9C29B2;
+    box-shadow: 5px 5px 12px #cacaca, -5px -5px 12px #ffffff;
+    border-radius: 50%;
+    transition: 0.2s;
+    z-index: 100;
+  }
+  
+  .main-button:hover {
+    background: #88c90d;
+  }
+
+  .button {
+    position: absolute;
+    display: grid;
+    place-items: center;
+    padding: 10px;
+    border: none;
+    background: #e8e8e8;
+    box-shadow: 5px 5px 12px rgba(202, 202, 202, 0), -5px -5px 12px rgba(255, 255, 255, 0);
+    transition: 0.3s;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+  }
+
+  .fab .fas {
+    margin: 0 auto;
+  }
+  
+  .whatsapp-button:hover {
+    background: #25D366;
+  }
+  
+  .buttons:hover .whatsapp-button {
+    translate: 0px -70px;
+    box-shadow: 5px 5px 12px #cacaca, -5px -5px 12px #ffffff;
+  }
+
+  .twitter-button:hover {
+    background: #1CA1F1;
+  }
+  
+  .buttons:hover .twitter-button {
+    translate: 47px -47px;
+    box-shadow: 5px 5px 12px #cacaca, -5px -5px 12px #ffffff;
+  }
+   
+  .messenger-button:hover {
+    background: #0093FF;
+  }
+  
+  .buttons:hover .messenger-button {
+    translate: -47px -47px;
+    box-shadow: 5px 5px 12px #cacaca, -5px -5px 12px #ffffff;
+  }
+  
+  .pinterest-button:hover {
+    background: #FFFC00;
+  }
+  
+  .buttons:hover .pinterest-button {
+    translate: -70px 0px;
+    box-shadow: 5px 5px 12px #cacaca, -5px -5px 12px #ffffff;
+  }
+  
+  .instagram-button:hover {
+    background: #F914AF;
+  }
+  
+  .buttons:hover .instagram-button {
+    translate: -47px 47px;
+    box-shadow: 5px 5px 12px #cacaca, -5px -5px 12px #ffffff;
+  }
+  
+  .snapchat-button:hover {
+    background: #F0002A;
+  }
+  
+  .buttons:hover .snapchat-button {
+    translate: 0px 70px;
+    box-shadow: 5px 5px 12px #cacaca, -5px -5px 12px #ffffff;
+  }
+  
+
+/* END BUTTON */
+
+@keyframes latir {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.1);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  
+  @media (max-width: 767px) {
+    .sharing {
+      bottom: 160px;
+      right: 20px;
+      zoom: 0.9;
+  }
+  }
+
+
+  .sr-icon-btn {
+    animation: latir 4s infinite;
+  }
+

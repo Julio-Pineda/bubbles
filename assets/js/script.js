@@ -10,9 +10,10 @@ inputFechaHora.min = fechaFormateada;
       var nombre = document.getElementById("name").value.trim();
       var baby = document.getElementById("nameBaby").value.trim();
       var age = document.getElementById("age").value.trim();
-      var select = document.getElementById("servicePack");
-      var indiceSeleccionado = select.selectedIndex;
-      var service = select.options[indiceSeleccionado].textContent;
+      var select1 = document.getElementById("servicePack1");
+      var indiceSeleccionado1 = select1.selectedIndex1;
+      var service1 = select1.options[indiceSeleccionado1].textContent;
+
       var inputDate =   document.getElementById("meet").value.trim();
       var dateObj = new Date(inputDate);
       var options = {
@@ -24,7 +25,8 @@ inputFechaHora.min = fechaFormateada;
         hour12: true
       };
       var meet = dateObj.toLocaleString('es-ES', options);
-    var mensaje = "Hola, me gustaría agendar una cita. Estos son mis datos:\n\nMi nombre es *" + nombre + "*\nEl nombre de mi bebé es *" + baby + "*\nSu edad está entre *" + age + " meses*\nHe decidido adquirir el servicio de *" + service + "*\nAsistiré el día *" + meet + "*\n\nSolicito por favor, me comparta información de pago para quedar registrado, muchas gracias.";
+
+    var mensaje = "Hola, me gustaría agendar una cita. Estos son mis datos:\n\nMi nombre es *" + nombre + "*\nEl nombre de mi bebé es *" + baby + "*\nSu edad está entre *" + age + " meses*\nHe decidido adquirir el servicio de *" + service1 + "*\nAsistiré el día *" + meet + "*\n\nSolicito por favor, me comparta información de pago para quedar registrado, muchas gracias.";
     var enlaceWhatsApp = "https://api.whatsapp.com/send?phone=+573154959099&text=" + encodeURIComponent(mensaje);
     
     window.open(enlaceWhatsApp, "_blank");

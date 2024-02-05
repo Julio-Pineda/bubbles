@@ -451,6 +451,33 @@
                                 </div>
                             </div>
                         </div>
+                        <!--------------------- SERVICE 7 ----------------------------->
+                        <div class="tab-pane fade show active" id="nav-seven" role="tabpanel" aria-labelledby="nav-seven-tab">
+                            <div class="row align-items-center service-grid">
+                                <div class="col-md-6">
+                                    <div class="service-img">
+                                        <a href="assets/img/service/s3-7.jpg" class="popup-image"><img src="assets/img/service/s3-7.jpg" alt="photo"></a>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="service-icon">
+                                        <img src="assets/img/icon/sr3-1.png" alt="icon">
+                                    </div>
+                                    <h2 class="h3 service-title"><a href="service-details.html">Servicios</a></h2>
+                                    <p class="service-text">Echa un vistazo a lo que pueda interesar:</p>
+                                    <div class="check-list style-2">
+                                        <ul>
+                                            <li>Estimulación acuática. <span class="sub-title">$ 100.000</span></li>
+                                            <li>Estimulación adecuada, clase personalizada. <span class="sub-title">$ 80.000</span></li>
+                                            <li>Taller gateo y taller marcha <span class="sub-title">$ 80.000</span></li>
+                                            <li>Chocolaterapia <span class="sub-title">$ 50.000</span></li>
+                                            <li>Post vacuna <span class="sub-title">$ 80.000</span></li>
+                                        </ul>
+                                    </div>
+                                    <a href="contact.html#appointment" class="vs-btn wave-btn">Agendar cita.</a>
+                                </div>
+                            </div>
+                        </div>
 
                     </div>
                 </div>
@@ -459,6 +486,7 @@
                         <button class="sr-icon-btn" id="nav-two-tab" data-bs-toggle="tab" data-bs-target="#nav-two" type="button" role="tab" aria-controls="nav-two" aria-selected="false"><img class="imgTeddy" src="assets/img/icon/s3-8.png" alt="icon"><span class="text">Decoración básica</span></button>
                         <button class="sr-icon-btn" id="nav-three-tab" data-bs-toggle="tab" data-bs-target="#nav-three" type="button" role="tab" aria-controls="nav-three" aria-selected="false"><img class="imgTeddy" src="assets/img/icon/s3-7.png" alt="icon"><span class="text">Decoración VIP</span></button>
                         <button class="sr-icon-btn" id="nav-six-tab" data-bs-toggle="tab" data-bs-target="#nav-six" type="button" role="tab" aria-controls="nav-six" aria-selected="false"><img src="assets/img/icon/s3-6.png" alt="icon"><span class="text">Decoración VIP<br>Personalizada</span></button>
+                        <button class="sr-icon-btn" id="nav-seven-tab" data-bs-toggle="tab" data-bs-target="#nav-seven" type="button" role="tab" aria-controls="nav-seven" aria-selected="false"><img src="assets/img/icon/s3-1.png" alt="icon"><span class="text">Más servicios</span></button>
                     </div>
                 </div>
             </div>
@@ -645,10 +673,14 @@
 
     <script>
            window.addEventListener('load', function() {
-        // Este código se ejecutará una vez que todos los recursos, incluyendo los scripts, se hayan cargado.
+            document.getElementById("nav-one-tab").click();
+            setTimeout(() => {
+                document.getElementById("nav-seven-tab").click();
+                setTimeout(() => {
+                    document.getElementById("nav-one-tab").click();
+            }, 200);
+            }, 200);
         console.log("Todos los recursos se han cargado.");
-        
-        // Aquí puedes agregar código adicional que dependa de los scripts cargados.
     }); 
     </script>
 
